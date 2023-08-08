@@ -223,7 +223,7 @@ Computing devices based on Intel Core processors from the 6th Skylake to (includ
 A hacker can target high-value credentials such as passwords and encryption keys. Recovering such credentials can lead to other attacks that violate the availability and integrity of computers in addition to confidentiality.</p>
 <p><strong>[Q] How practical are these attacks?</strong></p>
 <p>[A]
-GDS is highly practical. It tooks me 2 weeks to develop an end-to-end attack stealing encryption keys from OpenSSL. It only requires the attacker and victim to share the same physical processor core, which frequently happens on modern-day computers, implementing preemptive multitasking and simultaneous multithreading.</p>
+GDS is highly practical. It took me 2 weeks to develop an end-to-end attack stealing encryption keys from OpenSSL. It only requires the attacker and victim to share the same physical processor core, which frequently happens on modern-day computers, implementing preemptive multitasking and simultaneous multithreading.</p>
 <p><strong>[Q] Is Intel SGX also affected?</strong></p>
 <p>[A]
 In addition to normal isolation boundaries e.g., virtual machines, processes, user-kernel isolation, Intel SGX is also affected. Intel SGX is a hardware security feature available on Intel CPUs to protect user&rsquo;s data against all form of malicious software.</p>
@@ -233,7 +233,7 @@ In addition to normal isolation boundaries e.g., virtual machines, processes, us
 <p>[A] At least nine years. The affected processors have been around since 2014.</p>
 <p><strong>[Q] Is there a way to detect Downfall attacks?</strong></p>
 <p>[A]
-It is not easy. Downfall execution looks mostly like benign applications. Theoretically, one could develop a detection system that uses hardware performance counters to detect abnormal behaviors like exessive cache misses. However, off-the-shelf Antivirus software cannot detect this attack.</p>
+It is not easy. Downfall execution looks mostly like benign applications. Theoretically, one could develop a detection system that uses hardware performance counters to detect abnormal behaviors like excessive cache misses. However, off-the-shelf Antivirus software cannot detect this attack.</p>
 <p><strong>[Q] Is there any mitigation for Downfall?</strong></p>
 <p>[A]
 Intel is releasing a microcode update which blocks transient results of gather instructions and prevent attacker code from observing speculative data from <em>Gather</em>.</p>
@@ -243,7 +243,7 @@ This depends on whether <em>Gather</em> is in the critical execution path of a p
 <p><strong>[Q] Can I disable the mitigation if my workload does not use Gather?</strong></p>
 <p>[A]
 This is a bad idea. Even if your workload does not use vector instructions, modern CPUs rely on vector registers to optimize common operations, such as copying memory and switching register content, which leaks data to untrusted code exploiting <em>Gather</em>.</p>
-<p><strong>[Q] How long was this vulberability under embargo?</strong></p>
+<p><strong>[Q] How long was this vulnerability under embargo?</strong></p>
 <p>[A]
 Almost one year. I reported this vulnerability to Intel August 24, 2022.</p>
 <p><strong>[Q] Should other processor vendors and designers be concerned?</strong></p>
