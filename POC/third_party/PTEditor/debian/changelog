@@ -1,0 +1,60 @@
+pteditor-dkms (0.5) bionic; urgency=medium
+
+  * Allow multiple inclusions of the header
+  * Fixes for Microsoft Azure
+  * Fixed locking
+  * Fixes for TLB invalidation
+
+pteditor-dkms (0.4.3) bionic; urgency=medium
+
+  * Fixed handling of 2MB large pages
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Fri, 18 Jun 2021 11:34:56 +0100
+
+pteditor-dkms (0.4.2) bionic; urgency=medium
+
+  * Fixes for Ubuntu 20.10
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Tue, 17 Nov 2020 20:04:58 +0100
+
+pteditor-dkms (0.4.1) bionic; urgency=medium
+
+  * Fixes for Ubuntu minimal cloud image
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Mon, 26 Oct 2020 09:46:37 +0100
+
+pteditor-dkms (0.4) bionic; urgency=medium
+
+  * Fixes for several kernel versions, fixed C warnings, and added C++ compatibility
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Sat, 17 Oct 2020 23:28:14 +0100
+
+pteditor-dkms (0.3.4) bionic; urgency=medium
+
+  * Updated for kernel 5.9
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Wed, 30 Sep 2020 08:34:24 +0100
+
+pteditor-dkms (0.3.3) bionic; urgency=medium
+
+  * Updated for kernel 5.8
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Wed, 09 Sep 2020 11:02:11 +0100
+
+pteditor-dkms (0.3.2) bionic; urgency=medium
+
+  * Updated for kernel 5.7
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Fri, 28 Aug 2020 08:43:50 +0100
+
+pteditor-dkms (0.3.1) bionic; urgency=medium
+
+  * Updated for kernel 5.6
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Thu, 14 Apr 2020 21:36:16 +0100
+
+pteditor-dkms (0.2) bionic; urgency=medium
+
+  * Initial package.
+
+ -- Michael Schwarz <michael.schwarz91@gmail.com>  Sun, 29 Mar 2020 17:10:02 +0100

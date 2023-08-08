@@ -1,0 +1,8 @@
+Source: pteditor-dkms
+Maintainer: Michael Schwarz <michael.schwarz91@gmail.com>
+Build-Depends: debhelper (>= 9), dkms
+
+Package: pteditor-dkms
+Architecture: all
+Depends: ${misc:Depends}
+Description: DKMS source for PTEditor

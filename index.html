@@ -1,48 +1,313 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-</style>
-</head>
-<body>
+	<meta name="generator" content="Hugo 0.115.4">
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://downfall.page/images/favicon.png" />
+<title>Downfall</title>
+<meta name="title" content="Downfall" />
+<meta name="description" content="Downfall attacks targets a critical weakness found in billions of modern processors used in personal and cloud computers." />
+<meta name="keywords" content="" />
 
-<p id="demo"></p>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("August 8, 2023, 10:00 AM UTC-7").getTime();
+<meta property="og:title" content="" />
+<meta property="og:description" content="Downfall attacks targets a critical weakness found in billions of modern processors used in personal and cloud computers." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://downfall.page/" /><meta property="og:image" content="https://downfall.page/images/share.png"/><meta property="og:site_name" content="Downfall Attacks" />
 
-// Update the count down every 1 second
-var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = "Come back in: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://downfall.page/images/share.png"/>
+
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Downfall attacks targets a critical weakness found in billions of modern processors used in personal and cloud computers."/>
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Downfall attacks targets a critical weakness found in billions of modern processors used in personal and cloud computers.">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://downfall.page/index.xml" title="Downfall" />
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+     
   }
-}, 1000);
-</script>
 
-</body>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+</style>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<link rel="stylesheet" href="/css/custom.css" />
+</head>
+
+<body>
+  <header><div id="navbar">
+<nav><center><h1>Downfall Attacks</h1></center>
+<a href="/">Attack</a>
+<a href="/#demo">Demo</a>
+<a href="/#faq">FAQ</a>
+<a href="/#advisories">Advisories</a>
+<a href="/#links">Links</a>
+</nav>
+</div></header>
+  <main>
+<p><a href="images/profile.png"><img src="images/profile.png" alt="profile"></a></p>
+<p>Downfall attacks targets a critical weakness found in billions of modern processors used in personal and cloud computers. This vulnerability, identified as <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40982">CVE-2022-40982</a>, enables a user to access and steal data from other users who share the same computer. For instance, a malicious app obtained from an app store could use the Downfall attack to steal sensitive information like passwords, encryption keys, and private data such as banking details, personal emails, and messages. Similarly, in cloud computing environments, a malicious customer could exploit the Downfall vulnerability to steal data and credentials from other customers who share the same cloud computer.</p>
+<p>The vulnerability is caused by memory optimization features in Intel processors that unintentionally reveal internal hardware registers to software. This allows untrusted software to access data stored by other programs, which should not be normally be accessible. I discovered that the <em>Gather</em> instruction, meant to speed up accessing scattered data in memory, leaks the content of the internal vector register file during speculative execution. To exploit this vulnerability, I introduced Gather Data Sampling (GDS) and Gather Value Injection (GVI) techniques. You can read the <strong><a href="media/downfall.pdf">paper</a></strong> I wrote about this for more detail. Please cite as follow:</p>
+<pre tabindex="0"><code>@inproceedings{moghimi2023downfall,
+  title={{Downfall}: Exploiting Speculative Data Gathering},
+  author={Moghimi, Daniel},
+  booktitle={32th USENIX Security Symposium (USENIX Security 2023)},
+  year={2023}
+}
+</code></pre><p>By <strong><a href="https://moghimi.org/">Daniel Moghimi</a></strong></p>
+<hr>
+<h2 id="demo">Demo</h2>
+<h3 id="stealing-128-bit-and-256-bit-aes-keys-from-another-user">Stealing 128-bit and 256-bit AES keys from another user</h3>
+
+<center><video width="75%"  controls>
+    <source src="media/gds_aes.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video></center>
+<h3 id="stealing-arbitrary-data-from-the-linux-kernel">Stealing arbitrary data from the Linux Kernel</h3>
+
+<center><video width="75%"  controls>
+    <source src="media/gds_memcpy.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video></center>
+<h3 id="spying-on-printable-characters">Spying on printable characters</h3>
+
+<center><video width="75%"  controls>
+    <source src="media/gds_spy.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video></center>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="faq">FAQ</h2>
+<p><strong>[Q] Am I affected by this vulnerability?</strong></p>
+<p>[A]
+Most likely, yes. This depends on whether your computing devices (laptop, tablet, desktop, cloud, etc.) use the affected Intel processors. Even if you do not own any physical Intel-based devices, Intel&rsquo;s server market share is more than 70%, so most likely, everyone on the internet is affected.</p>
+<p><strong>[Q] Which computing devices are affected?</strong></p>
+<p>[A]
+Computing devices based on Intel Core processors from the 6th Skylake to (including) the 11th Tiger Lake generation are affected. A more comprehensive list of affected processors will be available <a href="https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html">here</a>.</p>
+<p><strong>[Q] What can a hacker do with this?</strong></p>
+<p>[A]
+A hacker can target high-value credentials such as passwords and encryption keys. Recovering such credentials can lead to other attacks that violate the availability and integrity of computers in addition to confidentiality.</p>
+<p><strong>[Q] How practical are these attacks?</strong></p>
+<p>[A]
+GDS is highly practical. It tooks me 2 weeks to develop an end-to-end attack stealing encryption keys from OpenSSL. It only requires the attacker and victim to share the same physical processor core, which frequently happens on modern-day computers, implementing preemptive multitasking and simultaneous multithreading.</p>
+<p><strong>[Q] Is Intel SGX also affected?</strong></p>
+<p>[A]
+In addition to normal isolation boundaries e.g., virtual machines, processes, user-kernel isolation, Intel SGX is also affected. Intel SGX is a hardware security feature available on Intel CPUs to protect user&rsquo;s data against all form of malicious software.</p>
+<p><strong>[Q] What about web browsers?</strong></p>
+<p>[A] In theory, remotely exploiting this vulnerability from the web browser is possible. In practice, demonstrating successful attacks via web browsers requires additional research and engineering efforts.</p>
+<p><strong>[Q] How long have users been exposed to this vulnerability?</strong></p>
+<p>[A] At least nine years. The affected processors have been around since 2014.</p>
+<p><strong>[Q] Is there a way to detect Downfall attacks?</strong></p>
+<p>[A]
+It is not easy. Downfall execution looks mostly like benign applications. Theoretically, one could develop a detection system that uses hardware performance counters to detect abnormal behaviors like exessive cache misses. However, off-the-shelf Antivirus software cannot detect this attack.</p>
+<p><strong>[Q] Is there any mitigation for Downfall?</strong></p>
+<p>[A]
+Intel is releasing a microcode update which blocks transient results of gather instructions and prevent attacker code from observing speculative data from <em>Gather</em>.</p>
+<p><strong>[Q] What is the overhead for the mitigation?</strong></p>
+<p>[A]
+This depends on whether <em>Gather</em> is in the critical execution path of a program. According to Intel, some workloads may experience up to 50% overhead.</p>
+<p><strong>[Q] Can I disable the mitigation if my workload does not use Gather?</strong></p>
+<p>[A]
+This is a bad idea. Even if your workload does not use vector instructions, modern CPUs rely on vector registers to optimize common operations, such as copying memory and switching register content, which leaks data to untrusted code exploiting <em>Gather</em>.</p>
+<p><strong>[Q] How long was this vulberability under embargo?</strong></p>
+<p>[A]
+Almost one year. I reported this vulnerability to Intel August 24, 2022.</p>
+<p><strong>[Q] Should other processor vendors and designers be concerned?</strong></p>
+<p>[A]
+Other processors have shared SRAM memory inside the core, such as hardware register files and fill buffers. Manufacturers must design shared memory units with extra care to prevent data from leaking across different security domains and invest more in security validation and testing.</p>
+<p><strong>[Q] How can I learn more about Downfall?</strong></p>
+<p>[A]
+In addition to the technical <a href="media/downfall.pdf">paper</a>, I am presenting Downfall at the <a href="https://www.blackhat.com/us-23/briefings/schedule/">BlackHat USA on August 9th, 2023</a> and <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/moghimi">USENIX Security Symposium on August 11, 2023</a>.</p>
+<p><strong>[Q] Can I play with Downfall?</strong></p>
+<p>[A]
+Here is the code: <a href="https://github.com/flowyroll/downfall/blob/main/POC">https://github.com/flowyroll/downfall/blob/main/POC</a></p>
+<p><strong>[Q] Why is this called Downfall?</strong></p>
+<p>[A]
+Downfall defeats fundamental security boundaries in most computers and is a successor to previous data leaking vulnerabilities in CPUs including <a href="https://meltdownattack.com/">Meltdown</a> and <a href="https://mdsattacks.com/">Fallout</a> (AKA MDS). In this trilogy, <strong>Downfall</strong> defeats all previous mitigations once again.</p>
+<p><strong>[Q] How did you create the logo?</strong></p>
+<p>[A]
+I used the <a href="https://openai.com/dall-e-2">DALL·E 2</a> AI system to create the logo.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="advisories">Advisories</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Vendor</th>
+<th style="text-align:left">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">MITRE</td>
+<td style="text-align:left"><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40982">CVE-2022-40982</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Intel</td>
+<td style="text-align:left"><a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00828.html">INTEL-SA-00828</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="links">Links</h2>
+<ul>
+<li>
+<p><a href="https://www.darkreading.com/edge/meet-the-finalists-for-the-2023-pwnie-awards">Meet the Finalists for the 2023 Pwnie Awards</a> by Dark Reading</p>
+</li>
+<li>
+<p><a href="https://www.intel.com/content/www/us/en/developer/articles/technical/softwaresecurity-guidance/technical-documentation/gather-data-sampling.html">Gather Data Sampling Technical Paper</a> by Intel</p>
+</li>
+<li>
+<p><a href="https://www.intel.com/content/www/us/en/developer/topic-technology/softwaresecurity-guidance/best-practices/threat-analysis-gds.html">Threat Analysis Assessment for GDS Paper</a> by Intel</p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=PjbJs2yZNKk&amp;t=1s">Episode 56: Interview with Daniel Moghimi about Downfall</a> by Chips &amp; Salsa</p>
+</li>
+</ul>
+
+
+  </main>
+  <footer><hr>
+Copyright @  Daniel Moghimi 2023   
+
+
+</footer>
+
+  <link rel="stylesheet" href="/css/custom.css" /></body>
+
 </html>

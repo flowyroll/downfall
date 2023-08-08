@@ -1,0 +1,17 @@
+img[alt=profile] { width: 65%; float: center; display: block;
+    margin-left: auto;
+    margin-right: auto;}
+.fa {
+    color: black;
+}
+#navbar {
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    /* background-color: #333; */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    max-width: 720px;
+    padding-bottom: 0.5%;
+}​
