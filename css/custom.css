@@ -14,4 +14,5 @@ img[alt=profile] { width: 65%; float: center; display: block;
     width: 100%; /* Full width */
     max-width: 720px;
     padding-bottom: 0.5%;
+    z-index: 999;
 }​
